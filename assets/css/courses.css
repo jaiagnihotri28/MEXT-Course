@@ -1,0 +1,64 @@
+.ug-course{
+            height: 60%;
+            width: 50%;
+            background-color: rgb(207, 203, 203);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            color: rgb(4, 0, 0);
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            
+}
+
+.checkmark-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.headline-fail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkmark-list li {
+    height: 25%;
+    width:90%;
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+.checkmark-list li::before {
+    content: '\2713'; /* Unicode character for check mark */
+    position: absolute;
+    left: 0;
+    color: rgb(37, 4, 119); /* You can change the color to your preference */
+}
+
+.container-fail {
+    display: flex;
+    gap: 20px; /* Space between the two divs */
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.features-list {
+    background-color: #f4f1f1f1; /* light grey shade */
+    border: 2px solid #68656571; /* light border */
+    border-radius: 10px; /* rounded corners */
+    padding: 20px; /* space inside the box */
+    max-width: 600px; /* limit the width */
+    margin: 0 auto; /* center the element */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add subtle shadow */
+    text-align: center; /* center the text */
+}
+
+.features-list h3 {
+    color: beige;
+    margin-bottom: 20px; /* space below the header */
+}
