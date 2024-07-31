@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-image: url("4.jpg"); */
+    background-color: #444645;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.left-side, .right-side {
+    padding: 20px;
+}
+
+.left-side {
+    flex: 1;
+    border-right: 1px solid #ddd;
+}
+
+.right-side {
+    flex: 1;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%;
+}
+
+.payment-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+button:hover {
+    opacity: 0.8;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.heading {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: "Laila", serif;
+    font-weight: bolder;
+    /* font-style: italic; */
+    /* font-family: "Tajawal", sans-serif; */
+}
+
+.heading1 {
+    margin-top: 17px;
+    margin-bottom: 30px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700px;
+    
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+li{
+    font-family: "Tajawal", sans-serif;
+}
+
+.payment-buttons button {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+}
+
+.payment-buttons button .material-symbols-outlined {
+    margin-right: 5px; 
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .right-side {
+        order: 1;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .left-side {
+        order: 2;
+        border-right: none;
+        overflow-y: auto; 
+        max-height: 300px; 
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-side ul {
+        padding-left: 20px;
+    }
+
+    .payment-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .payment-buttons button,
+    .buttonupi {
+        margin-top: 10px; 
+        width: calc(100% - 20px); 
+        max-width: 100%; 
+    }
+}
+
+@media (min-width: 901px) {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-side {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .left-side {
+        flex: 1;
+        margin-right: 20px;
+        border-right: 1px solid #ddd;
+    }
+
+    .payment-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px; 
+    }
+
+    .payment-buttons button,
+    .buttonupi {
+        width: auto; 
+        padding: 10px 20px; 
+    }
+
+    .buttonupi {
+        margin-right: 15px; 
+    }
+}
+
+
+
