@@ -1,64 +1,299 @@
-.ug-course{
-            height: 60%;
-            width: 50%;
-            background-color: rgb(207, 203, 203);
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            color: rgb(4, 0, 0);
-            font-family: Arial, sans-serif;
-            justify-content: center;
-            
-}
 
-.checkmark-list {
+#mextcourse-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  /* Headline Styles */
+  .headline-fail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .headline-fail h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-bottom: 3px solid #e41818;
+  }
+  
+  .headline-fail h2:nth-child(2) {
+    color: rgb(255, 0, 0);
+    margin: 0 10px;
+  }
+  
+  /* Row Styles */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Course Card Styles */
+  .ug-course {
+    width: 50%;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 450px;
+    height: 600px;
+    overflow-y: hidden;
+  }
+  
+  .ug-course h3 {
+    margin-top: 0;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em; /* Increase font size */
+    line-height: 1.4; /* Adjust line height */
+    text-transform: uppercase; /* Make text uppercase */
+    color: #333; /* Darker color for better readability */
+    padding: 10px 20px; /* Add padding */
+    margin-bottom: 15px; /* Add bottom margin for spacing */
+    margin-left: 20px; /* Adjust left margin of h3 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .crossmark-list {
+    /* styles for the ul element */
     list-style: none;
     padding: 0;
-    width: 100%;
-}
-
-.headline-fail {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.checkmark-list li {
-    height: 25%;
-    width:90%;
+    margin: 0;
+  }
+  
+  .crossmark-list li {
+    /* styles for each li element */
+    margin: 10px 0;
+    padding: 5px 0;
     position: relative;
-    padding-left: 15px;
-    margin-bottom: 10px;
-}
-
-
-
-.checkmark-list li::before {
-    content: '\2713'; /* Unicode character for check mark */
+    margin-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .crossmark-list li:before {
+    /* add a checkmark icon before each li element */
+    content: "\2716";
     position: absolute;
+    left: -35px;
+    margin-right: 10px;
+    color: #e41818;
+  }
+
+  ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  ul li {
+    text-align: justify;
+  }
+
+  .checkmark-list {
+    /* styles for the ul element */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .checkmark-list li {
+    /* styles for each li element */
+    margin: 10px 0;
+    padding: 5px 0;
+    position: relative;
+    margin-left: 40px;
+    right: 0;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .checkmark-list li:before {
+    /* add a checkmark icon before each li element */
+    content: "\2714";
+    position: absolute;
+    left: -35px;
+    margin-right: 10px;
+    color: #1bc218;
+  }
+
+  /* Red Card Styles */
+  #ug-course-id-1 {
+    background: linear-gradient(180deg, #ffffff 0%, rgb(246, 178, 178) 100%);
+    color: #383838;
+  }
+
+  /* Green Card Styles */
+  #ug-course-id-2 {
+    background: linear-gradient(180deg, #ffffff 0%, rgb(140, 246, 193) 100%);
+    color: #383838;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .ug-course {
+      width: 100%;
+      margin: 15px 0;
+    }
+  }
+
+/* Features content */
+
+#features {
+  display: flex;
+  justify-content: center; /* Center align content horizontally */
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Gradient background */
+  padding: 40px 20px; /* Padding inside the section */
+}
+
+  .content-wrapper {
+    background-color: #fff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the content wrapper */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    width: 100%; /* Ensure full width */
+    max-width: 600px; /* Limit maximum width */
+  }
+
+  h3 {  
+    color: #333; /* Header text color */
+    font-size: 25px; /* Header font size */
+    text-transform: uppercase;
+    text-align: center; /* Center align header text */
+    text-shadow: 2px 2px 2px #4d4d4d;
+    margin-bottom: 20px; /* Margin below header */
+  }
+
+  .features-list {
+    margin-top: 20px; /* Margin between header and list */
+  }
+
+  .features-list ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 40px;
+  }
+
+  .features-list ul li {
+    font-size: 20px; /* Font size for list items */
+    line-height: 1.8; /* Line height for better readability */
+    color: #333; /* Text color */
+  }
+
+  .features-list ul li::before {
+    content: "🎥";
+    display: inline-flex;
+    position: absolute;
+    left: 480px;
+    margin-right: 10px;
+  }
+  
+  ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+
+  /* Center the video container horizontally */
+  .video-container {
+    position: relative;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width */
+    padding-top: 25%; /* 16:9 aspect ratio (9/16*100) */
+    margin: 0 auto; /* Center align */
+    border-radius: 10px; /* Optional: Reduce border radius for better aesthetics */
+    overflow: hidden; /* Hide overflow */
+}
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
     left: 0;
-    color: rgb(37, 4, 119); /* You can change the color to your preference */
+    width: 100%;
+    height: 100%;
+    border-radius: inherit; /* Inherit the border radius from the container */
 }
 
-.container-fail {
-    display: flex;
-    gap: 20px; /* Space between the two divs */
-    justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-}
 
-.features-list {
-    background-color: #f4f1f1f1; /* light grey shade */
-    border: 2px solid #68656571; /* light border */
-    border-radius: 10px; /* rounded corners */
-    padding: 20px; /* space inside the box */
-    max-width: 600px; /* limit the width */
-    margin: 0 auto; /* center the element */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* add subtle shadow */
-    text-align: center; /* center the text */
-}
+/* Enroll content */
 
-.features-list h3 {
-    color: beige;
-    margin-bottom: 20px; /* space below the header */
+#enroll {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px auto;
 }
+  
+  .container-roll {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2d2d27;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .enroll-list {
+    background-color: #ede6e6;
+    border: 2px solid #878787;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .enroll-list h3 {
+    color: #2d2d27;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  .enroll-list p {
+    color: #4d4d4d;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .bullet-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .bullet-list li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #2d2d27;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .bullet-list li::before {
+    content: "\2022"; /* Unicode for bullet point */
+    color: #ff6347; /* Tomato color for bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }

@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+#header {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgb(252,176,69);
+    background: linear-gradient(120deg, #000, gray);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#header:hover {
+    transform: translateX(0);
+}
+
+#logo {
+    display: flex;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#logo img {
+    display: flex;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 75px;
+    height: 75px;
+}
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+}
+
+#logo p {
+    font-size: 16px;
+    margin: 5px 0 0;
+    align-content: flex-end;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#nav ul li {
+    width: 100%;
+}
+
+#nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s, padding-left 0.3s;
+}
+
+#nav ul li a span {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+    font-size: 18px;
+    transition: background 0.3s, padding-left 0.3s;
+}
+
+#nav ul li a span:hover {
+    color: linear-gradient(Red, rgba(255, 255, 255, 0));
+}
+
+#nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 30px;
+}
+
+#nav ul li a .icon {
+    margin-right: 10px;
+}
+
+.bottom {
+    margin-top: auto;
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.icons li {
+    margin: 0 5px;
+}
+
+.icons li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.icons li a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #header {
+        width: 200px;
+    }
+    
+    #nav ul li a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}

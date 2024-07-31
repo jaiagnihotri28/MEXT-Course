@@ -1,0 +1,140 @@
+
+header h2 {
+    font-size: 2.5em;
+    margin: 0 0 20px;
+}
+
+header p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 0 0 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .btn:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .btn:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+
+    60% {
+      left: 100%;
+    }
+    
+    to {
+      left: 100%;
+    }
+  }
+  
+  /* === removing default button style ===*/
+  .btn1 {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   .btn1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .btn1:hover {
+    color: #e3e3e3;
+   }
+   
+   .btn1:hover::before {
+    width: 100%;
+   }
+
+@media (max-width: 768px) {
+    header h2 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.9em;
+    }
+}
