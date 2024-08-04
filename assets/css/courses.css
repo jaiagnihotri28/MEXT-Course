@@ -17,23 +17,21 @@
   /* Headline Styles */
   .headline-fail {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
   }
   
   .headline-fail h2 {
     font-size: 2em;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0px;
     display: inline-block;
     text-transform: uppercase;
     padding: 10px 20px;
-    border-bottom: 3px solid #e41818;
   }
   
   .headline-fail h2:nth-child(2) {
     color: rgb(255, 0, 0);
-    margin: 0 10px;
+    margin: auto;
   }
   
   /* Row Styles */
@@ -69,7 +67,6 @@
     padding: 10px 20px; /* Add padding */
     margin-bottom: 15px; /* Add bottom margin for spacing */
     margin-left: 20px; /* Adjust left margin of h3 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
   
   .crossmark-list {
@@ -134,18 +131,18 @@
 
   /* Red Card Styles */
   #ug-course-id-1 {
-    background: linear-gradient(180deg, #ffffff 0%, rgb(246, 178, 178) 100%);
+    background: linear-gradient(180deg, #ffffff 0%, rgb(246, 176, 176) 100%);
     color: #383838;
   }
 
   /* Green Card Styles */
   #ug-course-id-2 {
-    background: linear-gradient(180deg, #ffffff 0%, rgb(140, 246, 193) 100%);
+    background: linear-gradient(180deg, #ffffff 0%, rgb(134, 236, 185) 100%);
     color: #383838;
   }
 
   /* Responsive Styles */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 414px) {
     .ug-course {
       width: 100%;
       margin: 15px 0;
@@ -198,8 +195,7 @@
     content: "🎥";
     display: inline-flex;
     position: absolute;
-    left: 480px;
-    margin-right: 10px;
+    margin-left: -40px;
   }
   
   ul {
@@ -209,21 +205,22 @@
 
   /* Center the video container horizontally */
   .video-container {
-    position: relative;
-    width: 100%; /* Full width */
+    position: absolute;
+    width: 50%; /* Full width */
     max-width: 600px; /* Maximum width */
-    padding-top: 25%; /* 16:9 aspect ratio (9/16*100) */
+    padding-top: 25%; /* 16:9 aspect ratio */
+    right: -200px;
     margin: 0 auto; /* Center align */
-    border-radius: 10px; /* Optional: Reduce border radius for better aesthetics */
+    border-radius: 20px; /* Optional: Reduce border radius for better aesthetics */
     overflow: hidden; /* Hide overflow */
 }
 
   .video-container iframe {
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     border-radius: inherit; /* Inherit the border radius from the container */
 }
 
